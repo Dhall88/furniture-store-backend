@@ -4,7 +4,7 @@ const schema = mongoose.Schema({
 	name: String,
     description: String,
     price: Number,
-    tags: [String]
+    tags: String
 })
 
 module.exports = mongoose.model("Product", schema)

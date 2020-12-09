@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../context-contacts"
+		},
+		{
+			"path": "../../furniture-store"
+		},
+		{
+			"path": "../../wirhal-utilites-client"
+		},
+		{
+			"path": ".."
+		}
+	]
+}
