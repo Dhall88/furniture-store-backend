@@ -13,7 +13,9 @@ router.post("/products", async (req, res) => {
 		name: req.body.name,
 		description: req.body.description,
 		price: req.body.price,
-		tags: req.body.tags
+		pictures: req.body.pictures,
+		tags: req.body.tags,
+
 	})
 	await product.save()
 	res.send(product)

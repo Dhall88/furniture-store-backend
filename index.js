@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const Product = require("./models/Product")
 const router = express.Router();
 
-app.use('/api', router);
+app.use('/', router);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
 
 
 mongoose.Promise = require('bluebird')
-mongoose.connect('mongodb://localhost:27017/acmedb')
+mongoose.connect('mongodb://localhost:27017/products')
 
 app.get('/', function(req,res){
 	res.json({message:'You did it!'})
